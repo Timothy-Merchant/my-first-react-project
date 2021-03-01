@@ -3,13 +3,21 @@ import Paragraph from "./Paragraph";
 import Square from "./Square";
 import People from "./People";
 
-const Stuff = () => {
+const Stuff = ({square}) => {
     return (
         <>
-            <Header />
-            <Paragraph />
-            <Square />
-            <People />
+            <Header
+                text="A cat, strutting its stuff!"
+            />
+            <Paragraph
+                message="This is a message."
+            />
+            <People
+                names={['name1', 'name2']}
+            />
+            { square ? <Square
+                colour=""
+            /> : null}
         </>
     );
 };

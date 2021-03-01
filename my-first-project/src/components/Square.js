@@ -4,8 +4,14 @@ const divStyle = {
     height: 200,
 };
 
-const Square = () => (
-    <div style={divStyle}></div>
+const divStyleDefault = {
+    width: 200,
+    height: 200,
+    background: 'blue',
+};
+
+const Square = (props) => (
+    <div style={props.colour ? divStyle : divStyleDefault}></div>
 );
 
 export default Square;
