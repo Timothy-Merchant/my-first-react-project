@@ -1,11 +1,10 @@
 import './App.css';
 import Stuff from "./components/Stuff";
 
+
 const App = () => {
-  return (
-    <>
-    <Stuff />    
-    </>
+  return (    
+      <Stuff />    
   );
 };
 

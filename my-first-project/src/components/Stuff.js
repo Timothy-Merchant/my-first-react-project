@@ -5,13 +5,13 @@ import People from "./People";
 
 const Stuff = () => {
     return (
-      <>
-      <Header />
-      <Paragraph />
-      <Square />
-      <People />
-      </>
+        <>
+            <Header />
+            <Paragraph />
+            <Square />
+            <People />
+        </>
     );
-  };
+};
 
-  export default Stuff;
+export default Stuff;
