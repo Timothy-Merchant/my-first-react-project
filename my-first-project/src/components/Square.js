@@ -10,8 +10,8 @@ const divStyleDefault = {
     background: 'blue',
 };
 
-const Square = (props) => (
-    <div style={props.colour ? divStyle : divStyleDefault}></div>
+const Square = ({ colour }) => (
+    <div style={colour ? divStyle : divStyleDefault}></div>
 );
 
 export default Square;
