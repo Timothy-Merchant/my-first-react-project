@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Timothy-Merchant/my-first-react-project/issues"
   },
-  "homepage": "https://github.com/Timothy-Merchant/my-first-react-project#readme"
+  "homepage": "https://github.com/Timothy-Merchant/my-first-react-project#readme",
+  "dependencies": {
+    "start": "^5.1.0"
+  }
 }
