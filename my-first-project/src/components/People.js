@@ -1,8 +1,8 @@
 // let names = ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"];
 
-const People = (props) => (
+const People = ({names}) => (
     <ul>
-        { props.names.length > 0 ? props.names.map((value, index) => (
+        { names.length > 0 ? names.map((value, index) => (
             <li key={index}>{value}</li>
         )) : 'nothing to see here'
         }

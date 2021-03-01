@@ -1,4 +1,4 @@
-const Paragraph = (props) => (
-    <p>{props.message ? props.message : "Hello world."}</p>
+const Paragraph = ({children}) => (
+    <p>{children ? children : "Hello world."}</p>
 );
 export default Paragraph;

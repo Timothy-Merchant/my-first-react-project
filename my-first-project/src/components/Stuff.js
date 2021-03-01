@@ -6,12 +6,8 @@ import People from "./People";
 const Stuff = ({square}) => {
     return (
         <>
-            <Header
-                text="A cat, strutting its stuff!"
-            />
-            <Paragraph
-                message="This is a message."
-            />
+            <Header>A special cat.</Header>
+            <Paragraph>This is a message.</Paragraph>
             <People
                 names={['name1', 'name2']}
             />
