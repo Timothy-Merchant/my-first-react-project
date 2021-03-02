@@ -3,6 +3,7 @@ import Paragraph from "./Paragraph";
 import Square from "./Square";
 import People from "./People";
 import Clicked from "./day02components/Clicked";
+import ToggleText from "./day02components/ToggleText";
 
 const Stuff = ({ square }) => {
     return (
@@ -16,6 +17,7 @@ const Stuff = ({ square }) => {
                 backgroundColor="hotpink"
             /> : null}
             <Clicked />
+            <ToggleText initial="Hello" alternate="World"/>
         </>
     );
 };
