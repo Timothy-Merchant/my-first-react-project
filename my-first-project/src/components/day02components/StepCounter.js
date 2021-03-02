@@ -6,7 +6,7 @@ class StepCounter extends Component {
 
         super(props);
 
-        const {step} = props;
+        const { step } = props;
 
         this.state = {
             plusClicked: false,
@@ -31,9 +31,11 @@ class StepCounter extends Component {
 
     decrement() {
 
-        this.setState({
-            number: this.state.number - this.state.step
-        })
+        if (this.state.number - this.state.step > 0) {
+            this.setState({
+                number: this.state.number - this.state.step
+            })
+        }
     }
 
     render() {
