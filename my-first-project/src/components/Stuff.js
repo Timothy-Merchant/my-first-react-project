@@ -9,6 +9,7 @@ import StepCounter from "./day02components/StepCounter";
 import CatchMeIfYouCan from "./day02components/CatchMeIfYouCan";
 import RollCall from "./day02components/RollCall";
 import Colours from "./day02tricksy/Colours";
+import Die from "./day02tricksy/Die";
 
 const Stuff = ({ square }) => {
     return (
@@ -34,6 +35,7 @@ const Stuff = ({ square }) => {
                 "#009EAD",
                 "#395967",
             ]} />
+            <Die sides={6} />
         </>
     );
 };
