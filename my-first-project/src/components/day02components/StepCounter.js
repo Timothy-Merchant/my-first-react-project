@@ -1,17 +1,18 @@
 import { Component } from "react";
 
-class Counter extends Component {
+class StepCounter extends Component {
 
     constructor(props) {
 
         super(props);
 
-        const {initial} = props;
+        const {step} = props;
 
         this.state = {
             plusClicked: false,
             minusClicked: false,
-            number: initial
+            number: 0,
+            step: step
         };
 
         this.increment = this.increment.bind(this);
@@ -23,7 +24,7 @@ class Counter extends Component {
 
             this.setState({
                 ...this.state,
-                number: this.state.number + 1
+                number: this.state.number + this.state.step
             })
         }
     }
@@ -31,7 +32,7 @@ class Counter extends Component {
     decrement() {
 
         this.setState({
-            number: this.state.number - 1
+            number: this.state.number - this.state.step
         })
     }
 
@@ -47,4 +48,4 @@ class Counter extends Component {
     }
 }
 
-export default Counter;
+export default StepCounter;
