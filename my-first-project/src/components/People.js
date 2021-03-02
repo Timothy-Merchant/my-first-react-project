@@ -1,12 +1,24 @@
-// let names = ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"];
+import { Component } from "react";
 
-const People = ({ names }) => (
-    names.length > 0 ?
-        <ul>
-            {names.map((value, index) => (
-                <li key={index}>{value}</li>
-            ))}
-        </ul> : 'nothing to see here'
-);
+class People extends Component {
+
+    handleClick() {
+        console.log("Hello, world");
+    }
+
+    render() {
+
+        let { names } = this.props;
+
+        return (
+            names.length > 0 ?
+                <ul onClick={this.handleClick}>
+                    {names.map((value, index) => (
+                        <li key={index}>{value}</li>
+                    ))}
+                </ul> : 'nothing to see here'
+        );
+    }
+}
 
 export default People;
