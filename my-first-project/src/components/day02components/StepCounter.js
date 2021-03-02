@@ -8,9 +8,7 @@ class StepCounter extends Component {
 
         const { step } = props;
 
-        this.state = {
-            plusClicked: false,
-            minusClicked: false,
+        this.state = {            
             number: 0,
             step: step
         };

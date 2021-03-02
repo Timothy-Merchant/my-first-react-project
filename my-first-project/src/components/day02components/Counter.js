@@ -8,9 +8,7 @@ class Counter extends Component {
 
         const {initial} = props;
 
-        this.state = {
-            plusClicked: false,
-            minusClicked: false,
+        this.state = {            
             number: initial
         };
 
