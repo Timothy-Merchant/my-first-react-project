@@ -7,11 +7,13 @@ import ToggleText from "./day02components/ToggleText";
 import Counter from "./day02components/Counter";
 import StepCounter from "./day02components/StepCounter";
 import CatchMeIfYouCan from "./day02components/CatchMeIfYouCan";
+import RollCall from "./day02components/RollCall";
 
 const Stuff = ({ square }) => {
     return (
         <>
             <CatchMeIfYouCan jump={100} />
+            <RollCall names={['name1', 'name2', 'name3']} />
             <Header>A special cat.</Header>
             <Paragraph>This is a message.</Paragraph>
             <People
