@@ -13,7 +13,7 @@ const Stuff = ({ square }) => {
                 names={['name1', 'name2']}
             />
             { square ? <Square
-                colour="red"
+                backgroundColor="hotpink"
             /> : null}
             <Clicked />
         </>
