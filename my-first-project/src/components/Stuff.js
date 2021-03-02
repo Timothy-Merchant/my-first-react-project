@@ -2,6 +2,7 @@ import Header from "./Header";
 import Paragraph from "./Paragraph";
 import Square from "./Square";
 import People from "./People";
+import Clicked from "./day02components/Clicked";
 
 const Stuff = ({ square }) => {
     return (
@@ -14,6 +15,7 @@ const Stuff = ({ square }) => {
             { square ? <Square
                 colour="red"
             /> : null}
+            <Clicked />
         </>
     );
 };
