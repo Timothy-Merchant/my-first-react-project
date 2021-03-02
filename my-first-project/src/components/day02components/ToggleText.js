@@ -2,7 +2,6 @@ import { Component } from "react";
 
 class ToggleText extends Component {
 
-    //  Create <ToggleText initial="Hello" alternate="World"> component. It should consist of a <p> and a <button>Toggle</button>. When the <button> is clicked the text of the <p> tag should alternate between initial and alternate.
 
     constructor(props) {
 

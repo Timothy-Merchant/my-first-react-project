@@ -6,12 +6,8 @@ class RollCall extends Component {
 
         super(props);
 
-        const { names } = props;
-
         this.state = {
             nameIndex: 0,
-            displayName: names[0],
-            names: names
         };
 
         this.next = this.next.bind(this);
@@ -19,24 +15,16 @@ class RollCall extends Component {
 
     next() {
 
-        if (this.state.nameIndex === this.state.names.length - 1) {
-            this.setState({
-                nameIndex: 0
-            })
-        } else {
+        this.state.nameIndex === this.props.names.length - 1 ?
+            this.setState({ nameIndex: 0 }) :
             this.setState({ nameIndex: this.state.nameIndex + 1 })
-        }
-
-        this.setState({
-            displayName: this.state.names[this.state.nameIndex],
-        })
     }
 
     render() {
 
         return (
             <>
-                <p>{this.state.displayName}</p>
+                <p>{this.props.names[this.state.nameIndex]}</p>
                 <button onClick={this.next}>Next</button>
             </>
         );
