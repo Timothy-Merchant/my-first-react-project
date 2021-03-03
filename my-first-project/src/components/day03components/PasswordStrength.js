@@ -32,13 +32,14 @@ class PasswordStrength extends Component {
         } else if (this.state.input.length < 9) {
             this.setState({ backgroundColor: "red" })
         }
-        
+
     }
 
     render() {
 
         return (
             <>
+                <h1>PasswordStrength</h1>
                 <input
                     type="password"
                     onChange={this.handleChange}

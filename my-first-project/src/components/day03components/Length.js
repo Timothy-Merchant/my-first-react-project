@@ -21,8 +21,9 @@ class Length extends Component {
 
         return (
             <>
+                <h1>Length</h1>
                 <input onChange={this.handleChange} value={this.state.input}></input>
-                <p>{this.state.input.length}</p>
+                <p>{this.state.input.length}</p>                
             </>
         );
     }

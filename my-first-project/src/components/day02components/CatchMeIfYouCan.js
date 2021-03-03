@@ -8,28 +8,29 @@ class StepCounter extends Component {
 
         const { jump } = props;
 
-        this.state = {    
-            scrollTo: 0,    
-            currentPosition: 0,    
+        this.state = {
+            scrollTo: 0,
+            currentPosition: 0,
             jump: jump
         };
 
-        this.jump = this.jump.bind(this);        
-    }    
+        this.jump = this.jump.bind(this);
+    }
 
     jump() {
 
         this.setState({
             scrollTo: this.state.currentPosition + this.state.jump
-        })        
-        window.scrollBy(0 , this.state.scrollTo)
+        })
+        window.scrollBy(0, this.state.scrollTo)
     }
 
     render() {
 
         return (
-            <>                
-                <button onClick={this.jump}>Jump!</button>                
+            <>
+                <h1>CatchMeIfYouCan</h1>
+                <button onClick={this.jump}>Jump!</button>
             </>
         );
     }

@@ -18,9 +18,7 @@ class List extends Component {
 
     handleClick(e) {
 
-
-
-        var inputs = [...this.state.inputs];
+        let inputs = [...this.state.inputs];
         inputs.push(
             <>
                 <input key={this.state.uniqueID}></input>
@@ -35,6 +33,7 @@ class List extends Component {
 
         return (
             <>
+                <h1>List</h1>
                 <ul>
                     {this.state.inputs}
                 </ul>

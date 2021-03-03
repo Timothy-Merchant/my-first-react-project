@@ -52,6 +52,7 @@ class TempConverter extends Component {
 
         return (
             <>
+            <h1>TempConverter</h1>
                 <input
                     onChange={this.handleFChange}
                     value={this.state.fInput}>
