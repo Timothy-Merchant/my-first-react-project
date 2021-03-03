@@ -6,6 +6,7 @@ import Adder from "./day03components/Adder";
 import Transform from "./day03components/Transform";
 import Form from "./day03components/Form";
 import GodCounter from "./day03components/GodCounter";
+import TwoCounters from "./day03components/TwoCounters";
  
 const Stuff2 = () => {
     return (
@@ -18,6 +19,7 @@ const Stuff2 = () => {
             <Transform transform={x => x * x} />
             <Form fields={['one', 'two', 'three']} />
             <GodCounter />
+            <TwoCounters />
         </>
     );
 };
