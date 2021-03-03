@@ -3,42 +3,34 @@ import { Component } from "react";
 class GodCounter extends Component {
 
     constructor(props) {
-
         super(props);
 
         this.state = {
-            seconds: this.props.aim,
-            elapsedTime: 0
+            counter: 1,
         };
 
-        this.tick = this.tick.bind(this);
-        this.stop = this.stop.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
-    tick() {
-        this.interval = setInterval(() => {
-            if (this.state.seconds === 0) {
-                clearInterval(this.interval);
-            } else {
-                this.setState(prevState => ({
-                    seconds: prevState.seconds - 1
-                }));
-            }
-        }, 1000);
+    componentDidMount() {
+        window.addEventListener("click", this.handleClick);
     }
 
-    stop() {
-        clearInterval(this.interval)
+    componentWillUnmount() {
+        window.removeEventListener("click", this.handleClick);
+    }
+
+    handleClick() {
+        this.setState({ counter: this.state.counter + 1 });
     }
 
     render() {
+
         return (
-            <div>
-                Seconds: {this.state.seconds}
-                <br />
-                <button onClick={this.tick}> Start </button>
-                <button onClick={this.stop}> Now! </button>
-            </div>
+            <>
+                <h1>GodCounter</h1>
+                <p>Result: {this.state.counter}</p>
+            </>
         );
     }
 }
