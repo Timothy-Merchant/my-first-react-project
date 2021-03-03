@@ -1,10 +1,13 @@
 import './App.css';
 import Stuff from "./components/Stuff";
-
+import Stuff2 from "./components/Stuff2";
 
 const App = () => {
   return (
-    <Stuff square={true} />
+    <>
+      <Stuff2 />
+      <Stuff square={true} />
+    </>
   );
 };
 

@@ -14,8 +14,7 @@ class Die extends Component {
             display: "flex",  
             justifyContent: "center", 
             alignItems: "center",   
-            fontSize: "150px",        
-            sides: this.props.sides,
+            fontSize: "150px",                    
             result: 0
         };
 
@@ -25,7 +24,7 @@ class Die extends Component {
     roll() {
 
         let random = Math.random(); 
-        let number = Math.floor(random * this.state.sides + 1);
+        let number = Math.floor(random * this.props.sides + 1);
         this.setState({ result: number });
     }
 

@@ -10,6 +10,7 @@ import CatchMeIfYouCan from "./day02components/CatchMeIfYouCan";
 import RollCall from "./day02components/RollCall";
 import Colours from "./day02tricksy/Colours";
 import Die from "./day02tricksy/Die";
+import LameGame from "./day02tricksy/LameGame";
 
 const Stuff = ({ square }) => {
     return (
@@ -36,6 +37,7 @@ const Stuff = ({ square }) => {
                 "#395967",
             ]} />
             <Die sides={6} />
+            <LameGame aim={3}/>            
         </>
     );
 };

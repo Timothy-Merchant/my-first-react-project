@@ -14,7 +14,7 @@ class Clicker extends Component {
     }
 
     handleClick() {
-        this.setState({ ...this.state, clicked: "clicked" });
+        this.setState({ clicked: "clicked" });
     }
 
     render() {

@@ -6,9 +6,9 @@ class Counter extends Component {
 
         super(props);
 
-        const {initial} = props;
+        const { initial } = props;
 
-        this.state = {            
+        this.state = {
             number: initial
         };
 
@@ -20,7 +20,6 @@ class Counter extends Component {
         if (this.state.number < this.props.max) {
 
             this.setState({
-                ...this.state,
                 number: this.state.number + 1
             })
         }
