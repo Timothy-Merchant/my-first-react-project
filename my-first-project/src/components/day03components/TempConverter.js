@@ -18,41 +18,30 @@ class TempConverter extends Component {
     }
 
     handleFChange(e) {
-        
-        
-        let newEquation = (this.state.fInput - 32) * 5 / 9
-        
+
+        let celcius = (e.currentTarget.value - 32) * 5 / 9
+
         this.setState({
             fInput: e.currentTarget.value,
+            cInput: celcius
         });
-        
-        this.setState({
-            cInput: newEquation
-        })
-
-        console.log(this.state.cInput)
-        console.log(this.state.fInput)
     }
 
     handleCChange(e) {
 
-        this.setState({ input: e.currentTarget.value });
+        let fahrenheit = (this.state.cInput + 32) * 5 / 9
 
-        if (this.state.input.length > 16) {
-            this.setState({ backgroundColor: "green" })
-        } else if (this.state.input.length > 9) {
-            this.setState({ backgroundColor: "orange" })
-        } else if (this.state.input.length < 9) {
-            this.setState({ backgroundColor: "red" })
-        }
-
+        this.setState({
+            cInput: e.currentTarget.value,
+            fInput: fahrenheit
+        });
     }
 
     render() {
 
         return (
             <>
-            <h1>TempConverter</h1>
+                <h1>TempConverter</h1>
                 <input
                     onChange={this.handleFChange}
                     value={this.state.fInput}>
