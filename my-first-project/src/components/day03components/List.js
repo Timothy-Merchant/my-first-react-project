@@ -17,7 +17,6 @@ class List extends Component {
     }
 
     handleClick(e) {
-
         let inputs = [...this.state.inputs];
         inputs.push(
             <>
