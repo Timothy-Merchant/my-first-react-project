@@ -9,7 +9,7 @@ class Square extends Component {
         this.state = {
             width: "200px",
             height: "200px",
-            backgroundColor: "green",
+            backgroundColor: this.props.backgroundColor,
         };
 
         this.handleClick = this.handleClick.bind(this);

@@ -9,6 +9,9 @@ import Die from "./components/day02tricksy/Die";
 import Footer from "./components/day04components/Footer";
 import ThreeCounters from './components/day04components/ThreeCounters';
 import FourOhFour from './components/day04components/FourOhFour';
+import Square from './components/Square';
+
+// /squares/:colour
 
 const App = () => {
   return (
@@ -27,6 +30,9 @@ const App = () => {
             <ThreeCounters
             />
           </Route>
+          <Route path="/squares/:backgroundColor" render={({ match }) => (
+            <Square backgroundColor={match.params.backgroundColor} />
+          )} />
           <FourOhFour />
         </Switch>
         <Footer />

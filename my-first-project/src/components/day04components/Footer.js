@@ -10,7 +10,7 @@ const Footer = () => (
         </li>
         <li className="list-group-item">
             <Link to="/check">Press three counter buttons</Link>
-        </li>
+        </li>        
     </ul>
 );
 
