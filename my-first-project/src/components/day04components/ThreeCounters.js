@@ -14,7 +14,6 @@ class ThreeCounters extends Component {
         this.handle1 = this.handle1.bind(this);
         this.handle2 = this.handle2.bind(this);
         this.handle3 = this.handle3.bind(this);
-        this.getStoredValues = this.getStoredValues.bind(this);
     }
 
     handle1() {
@@ -29,15 +28,13 @@ class ThreeCounters extends Component {
         this.setState({ value3: this.state.value3 + 1 });
     }
 
-    getStoredValues() {
-        this.setState({
-            value1: localStorage.getItem('value1'),
-            value2: localStorage.getItem('value2'),
-            value3: localStorage.getItem('value3'),
-        })
-    }
-
     componentWillMount() {
+        // let stored = window.localStorage.getItem("three-timers", this.state);
+
+        // if (stored) {
+        //     this.setState(JSON.parse(stored));
+        // }
+
         this.setState({
             value1: JSON.parse(localStorage.getItem('value1')),
             value2: JSON.parse(localStorage.getItem('value2')),
@@ -46,12 +43,14 @@ class ThreeCounters extends Component {
     }
 
     componentWillUpdate(nextProps, nextState) {
+        // localStorage.setItem("three-timers", JSON.stringify(this.state));
         localStorage.setItem('value1', JSON.stringify(nextState.value1))
         localStorage.setItem('value2', JSON.stringify(nextState.value2))
         localStorage.setItem('value3', JSON.stringify(nextState.value3))
     }
 
     componentWillUnmount() {
+        console.log("has unmounted");
         localStorage.clear();
     }
 
