@@ -37,7 +37,8 @@ class LightBox extends Component {
 
     render() {
 
-        const divStyle = {
+        let divStyle = {
+            position: "fixed",
             top: 0,
             left: 0,
             right: 0,
@@ -48,13 +49,13 @@ class LightBox extends Component {
             background: "rgba(0, 0, 0, 0.8)",
         }
 
-        const lightBoxStyle = {
+        let lightBoxStyle = {
             height: "50%",
             width: "50%",
             background: "rgba(0, 0, 0, 0.8)",
         };
 
-        const defaultStyle = {
+        let defaultStyle = {
             height: "50px",
             width: "50px",
             transition: "smooth"

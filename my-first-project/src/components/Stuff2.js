@@ -8,6 +8,8 @@ import Form from "./day03components/Form";
 import GodCounter from "./day03components/GodCounter";
 import TwoCounters from "./day03components/TwoCounters";
 import LightBox from "./day04components/LightBox";
+import Timer from "./day04components/Timer";
+import ThreeCounters from "./day04components/ThreeCounters";
 
 const Stuff2 = () => {
     return (
@@ -22,6 +24,8 @@ const Stuff2 = () => {
             <GodCounter />
             <TwoCounters />
             <LightBox src={"/avatar.png"} />
+            <Timer start={3} />
+            <ThreeCounters />
         </>
     );
 };
