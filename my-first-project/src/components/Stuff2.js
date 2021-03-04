@@ -7,7 +7,8 @@ import Transform from "./day03components/Transform";
 import Form from "./day03components/Form";
 import GodCounter from "./day03components/GodCounter";
 import TwoCounters from "./day03components/TwoCounters";
- 
+import LightBox from "./day04components/LightBox";
+
 const Stuff2 = () => {
     return (
         <>
@@ -20,6 +21,7 @@ const Stuff2 = () => {
             <Form fields={['one', 'two', 'three']} />
             <GodCounter />
             <TwoCounters />
+            <LightBox src={"/avatar.png"} />
         </>
     );
 };
