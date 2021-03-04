@@ -31,6 +31,8 @@ class PasswordStrength extends Component {
             this.setState({ backgroundColor: "orange" })
         } else if (this.state.input.length < 9) {
             this.setState({ backgroundColor: "red" })
+        } else if (this.state.input.length < 1) {
+            this.setState({ backgroundColor: "white" })
         }
 
     }

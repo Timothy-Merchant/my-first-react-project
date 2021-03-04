@@ -16,11 +16,9 @@ class Transform extends Component {
     }
 
     handleChange(e) {
-
-        let result = this.props.transform(e.currentTarget.value);        
-
+        
         this.setState({
-            result: result
+            result: this.props.transform(e.currentTarget.value)
         });
     }
 
