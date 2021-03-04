@@ -10,6 +10,7 @@ import Footer from "./components/day04components/Footer";
 import ThreeCounters from './components/day04components/ThreeCounters';
 import FourOhFour from './components/day04components/FourOhFour';
 import Square from './components/Square';
+import StepCounter from './components/day02components/StepCounter';
 
 // /squares/:colour
 
@@ -32,6 +33,9 @@ const App = () => {
           </Route>
           <Route path="/squares/:backgroundColor" render={({ match }) => (
             <Square backgroundColor={match.params.backgroundColor} />
+          )} />
+          <Route path="/steps/:max/:step" render={({ match }) => (
+            <StepCounter max={match.params.max} step={match.params.step} />
           )} />
           <FourOhFour />
         </Switch>

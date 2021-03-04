@@ -17,7 +17,7 @@ class StepCounter extends Component {
     increment() {
         if (this.state.number < this.props.max) {
             this.setState({
-                number: this.state.number + this.props.step
+                number: Number(this.state.number) + Number(this.props.step)
             })
         }
     }
