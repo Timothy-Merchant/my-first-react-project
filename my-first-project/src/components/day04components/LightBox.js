@@ -57,8 +57,7 @@ class LightBox extends Component {
 
         let defaultStyle = {
             height: "50px",
-            width: "50px",
-            transition: "smooth"
+            width: "50px",            
         };
 
         return (
