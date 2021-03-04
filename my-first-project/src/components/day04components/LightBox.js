@@ -49,14 +49,12 @@ class LightBox extends Component {
             background: "rgba(0, 0, 0, 0.8)",
         }
 
-        let lightBoxStyle = {
-            height: "50%",
+        let lightBoxStyle = {            
             width: "50%",
             background: "rgba(0, 0, 0, 0.8)",
         };
 
-        let defaultStyle = {
-            height: "50px",
+        let defaultStyle = {            
             width: "50px",            
         };
 
