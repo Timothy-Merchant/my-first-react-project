@@ -11,11 +11,15 @@ import ThreeCounters from './components/day04components/ThreeCounters';
 import FourOhFour from './components/day04components/FourOhFour';
 import Square from './components/Square';
 import StepCounter from './components/day02components/StepCounter';
-import Multiplier from './components/quizComponents/Multiplier';
-import EvenClicks from './components/quizComponents/EvenClicks';
-import CountBy from './components/quizComponents/CountBy';
-import HideMe from './components/quizComponents/HideMe';
-import MinimumLength from './components/quizComponents/MinimumLength';
+import Progress from './components/day05components/Progress';
+import CatchMeIfYouCan from './components/day05components/CatchMeIfYouCan';
+import PasswordStrength from './components/day05components/PasswordStrength';
+
+// Bootstrap imports
+import 'bootstrap/dist/css/bootstrap.min.css'
+import TempConverter from './components/day05components/TempConverter';
+// import ProgressBar from 'react-bootstrap/ProgressBar'
+// import Button from 'react-bootstrap/Button';
 
 // /squares/:colour
 
@@ -31,6 +35,7 @@ const App = () => {
             <Die
               sides={6}
             />
+            <Footer />
           </Route>
           <Route path="/check">
             <ThreeCounters
@@ -42,19 +47,15 @@ const App = () => {
           <Route path="/steps/:max/:step" render={({ match }) => (
             <StepCounter max={match.params.max} step={match.params.step} />
           )} />
-          <Route path="/quiz">
-            <Multiplier
-              x={5}
-              y={7}
-            />
-            <EvenClicks />
-            <CountBy step={5} />
-            <HideMe>Blah blah blah</HideMe>
-            <MinimumLength length={30}/>
+          <Route path="/prebuilt">
+            <Progress />
+            <CatchMeIfYouCan jump={100} />
+            <PasswordStrength />
+            <List />
+            <TempConverter />
           </Route>
           <FourOhFour />
         </Switch>
-        <Footer />
       </>
     </Router>
   );
