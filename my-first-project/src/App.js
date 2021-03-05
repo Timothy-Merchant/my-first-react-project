@@ -14,6 +14,7 @@ import StepCounter from './components/day02components/StepCounter';
 import Multiplier from './components/quizComponents/Multiplier';
 import EvenClicks from './components/quizComponents/EvenClicks';
 import CountBy from './components/quizComponents/CountBy';
+import HideMe from './components/quizComponents/HideMe';
 
 // /squares/:colour
 
@@ -47,6 +48,7 @@ const App = () => {
             />
             <EvenClicks />
             <CountBy step={5} />
+            <HideMe>Blah blah blah</HideMe>
           </Route>
           <FourOhFour />
         </Switch>
