@@ -14,6 +14,8 @@ import StepCounter from './components/day02components/StepCounter';
 import Progress from './components/day05components/Progress';
 import CatchMeIfYouCan from './components/day05components/CatchMeIfYouCan';
 import PasswordStrength from './components/day05components/PasswordStrength';
+import Dates from './components/day05components/Dates';
+import LightsOut from './components/day05components/LightsOut';
 
 // Bootstrap imports
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -53,6 +55,8 @@ const App = () => {
             <PasswordStrength />
             <List />
             <TempConverter />
+            <Dates />
+            <LightsOut />
           </Route>
           <FourOhFour />
         </Switch>

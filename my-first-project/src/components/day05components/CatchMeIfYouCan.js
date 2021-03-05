@@ -7,7 +7,6 @@ class CatchMeIfYouCan extends Component {
         super(props)
 
         this.state = {
-
             top: 0,
         }
 
@@ -27,7 +26,8 @@ class CatchMeIfYouCan extends Component {
                 <Button
                     className="btn btn-primary"
                     style={{ position: "relative", top: this.state.top + "px" }}
-                    onClick={this.clickHandler} >CatchMe</Button>
+                    onClick={this.clickHandler} >CatchMe
+                </Button>
             </>
 
         )
