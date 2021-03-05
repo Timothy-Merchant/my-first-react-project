@@ -12,6 +12,8 @@ import FourOhFour from './components/day04components/FourOhFour';
 import Square from './components/Square';
 import StepCounter from './components/day02components/StepCounter';
 import Multiplier from './components/quizComponents/Multiplier';
+import EvenClicks from './components/quizComponents/EvenClicks';
+import CountBy from './components/quizComponents/CountBy';
 
 // /squares/:colour
 
@@ -43,6 +45,8 @@ const App = () => {
               x={5}
               y={7}
             />
+            <EvenClicks />
+            <CountBy step={5} />
           </Route>
           <FourOhFour />
         </Switch>

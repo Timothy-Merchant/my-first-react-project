@@ -6,7 +6,10 @@ class Multiplier extends Component {
         const { x, y } = this.props;
 
         return (
-            <p>{x * y}</p>
+            <>
+                <h1>Multiplier</h1>
+                <p>{x * y}</p>
+            </>
         )
     }
 }
