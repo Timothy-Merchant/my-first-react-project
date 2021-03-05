@@ -15,6 +15,7 @@ import Multiplier from './components/quizComponents/Multiplier';
 import EvenClicks from './components/quizComponents/EvenClicks';
 import CountBy from './components/quizComponents/CountBy';
 import HideMe from './components/quizComponents/HideMe';
+import MinimumLength from './components/quizComponents/MinimumLength';
 
 // /squares/:colour
 
@@ -49,6 +50,7 @@ const App = () => {
             <EvenClicks />
             <CountBy step={5} />
             <HideMe>Blah blah blah</HideMe>
+            <MinimumLength length={30}/>
           </Route>
           <FourOhFour />
         </Switch>
