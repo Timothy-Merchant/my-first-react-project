@@ -11,6 +11,7 @@ import ThreeCounters from './components/day04components/ThreeCounters';
 import FourOhFour from './components/day04components/FourOhFour';
 import Square from './components/Square';
 import StepCounter from './components/day02components/StepCounter';
+import Multiplier from './components/quizComponents/Multiplier';
 
 // /squares/:colour
 
@@ -37,6 +38,12 @@ const App = () => {
           <Route path="/steps/:max/:step" render={({ match }) => (
             <StepCounter max={match.params.max} step={match.params.step} />
           )} />
+          <Route path="/quiz">
+            <Multiplier
+              x={5}
+              y={7}
+            />
+          </Route>
           <FourOhFour />
         </Switch>
         <Footer />
